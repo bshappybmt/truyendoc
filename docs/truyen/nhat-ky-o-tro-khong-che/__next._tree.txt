@@ -1,0 +1,5 @@
+:HL["/truyendoc/_next/static/chunks/2lki40y572l32.css","style"]
+:HL["/truyendoc/_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/truyendoc/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["https://cdn.vinahentai.cloud/manga-images/truyen-nhat-ky-o-tro-khong-che1_chapter-11-1759446339019-729b6528.jpg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"truyen","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"nhat-ky-o-tro-khong-che","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"VDMSWHVGdLVkroJuW1Kro"}
