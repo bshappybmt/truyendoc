@@ -1,82 +1,58 @@
 [
   {
-    "id": "1",
-    "slug": "hahris-lumpy-star",
-    "title": "Hahri's Lumpy Star",
-    "altTitle": "Hahri's Lumpy Star",
-    "description": "Câu chuyện về Hahri và những cuộc phiêu lưu kỳ thú.",
+    "id": "4",
+    "slug": "nhat-ky-o-tro",
+    "title": "Nhật Ký Ở Trọ",
+    "altTitle": "Diary of a Boarding House",
+    "description": "Câu chuyện về cuộc sống ở trọ đầy thú vị và những tình huống dở khóc dở cười của các bạn trẻ nơi thành phố.",
     "thumbnail": "https://cdn.vietmanhwa.com/story-images/6518ebcfbd9f1hahris-lumpy-background-1781899034181-fbd1d58a.webp",
-    "author": "Unknown",
+    "author": "Tác giả",
     "status": "ongoing",
-    "genres": ["Romance", "Comedy", "Drama"],
-    "views": 125000,
-    "updatedAt": "2026-06-15",
+    "genres": ["Comedy", "Slice of Life", "Romance"],
+    "views": 256000,
+    "updatedAt": "2026-06-20",
     "chapters": [
       {
-        "id": "1-1",
+        "id": "4-1",
         "number": 1,
-        "title": "Chapter 1",
-        "slug": "chapter-1",
+        "title": "Ngày đầu chuyển trọ",
+        "slug": "ngay-dau-chuyen-tro",
         "pages": [
-          "https://via.placeholder.com/800x1200/eee/999?text=Page+1",
-          "https://via.placeholder.com/800x1200/eee/999?text=Page+2",
-          "https://via.placeholder.com/800x1200/eee/999?text=Page+3"
+          "https://picsum.photos/seed/nkot1a/800/1200",
+          "https://picsum.photos/seed/nkot1b/800/1200",
+          "https://picsum.photos/seed/nkot1c/800/1200",
+          "https://picsum.photos/seed/nkot1d/800/1200",
+          "https://picsum.photos/seed/nkot1e/800/1200"
         ],
-        "createdAt": "2026-06-10"
-      }
-    ]
-  },
-  {
-    "id": "2",
-    "slug": "ac-nu-nam-xua-quay-lai-choi-ua-toi",
-    "title": "Ác Nữ Năm Xưa Quay Lại Chơi Đùa Tôi",
-    "altTitle": "The Villainess Returns to Play With Me",
-    "description": "Một câu chuyện tình yêu đầy kịch tính giữa quá khứ và hiện tại.",
-    "thumbnail": "https://cdn.vietmanhwa.com/story-images/651ccd69c72c2ac-nu-nam-xua-background-1781899108410-4c8e0dec.webp",
-    "author": "Unknown",
-    "status": "ongoing",
-    "genres": ["Romance", "Fantasy", "Drama"],
-    "views": 98000,
-    "updatedAt": "2026-06-14",
-    "chapters": [
+        "createdAt": "2026-06-18"
+      },
       {
-        "id": "2-1",
-        "number": 1,
-        "title": "Chapter 1",
-        "slug": "chapter-1",
+        "id": "4-2",
+        "number": 2,
+        "title": "Hàng xóm kỳ lạ",
+        "slug": "hang-xom-ky-la",
         "pages": [
-          "https://via.placeholder.com/800x1200/eee/999?text=Page+1",
-          "https://via.placeholder.com/800x1200/eee/999?text=Page+2"
+          "https://picsum.photos/seed/nkot2a/800/1200",
+          "https://picsum.photos/seed/nkot2b/800/1200",
+          "https://picsum.photos/seed/nkot2c/800/1200",
+          "https://picsum.photos/seed/nkot2d/800/1200"
         ],
-        "createdAt": "2026-06-12"
-      }
-    ]
-  },
-  {
-    "id": "3",
-    "slug": "moi-noi-mot-sexland",
-    "title": "Mỗi Nơi, Một SexLand",
-    "altTitle": "Every Place, A SexLand",
-    "description": "Những cuộc phiêu lưu đầy bất ngờ tại vùng đất mới.",
-    "thumbnail": "https://cdn.vietmanhwa.com/story-images/651bfbaec5e78moi-noi-mot-background-1781899197701-3e6f9da8.webp",
-    "author": "Unknown",
-    "status": "ongoing",
-    "genres": ["Adult", "Romance", "Harem"],
-    "views": 215000,
-    "updatedAt": "2026-06-13",
-    "chapters": [
+        "createdAt": "2026-06-19"
+      },
       {
-        "id": "3-1",
-        "number": 1,
-        "title": "Chapter 1",
-        "slug": "chapter-1",
+        "id": "4-3",
+        "number": 3,
+        "title": "Bữa tối bất ngờ",
+        "slug": "bua-toi-bat-ngo",
         "pages": [
-          "https://via.placeholder.com/800x1200/eee/999?text=Page+1",
-          "https://via.placeholder.com/800x1200/eee/999?text=Page+2",
-          "https://via.placeholder.com/800x1200/eee/999?text=Page+3",
-          "https://via.placeholder.com/800x1200/eee/999?text=Page+4"
+          "https://picsum.photos/seed/nkot3a/800/1200",
+          "https://picsum.photos/seed/nkot3b/800/1200",
+          "https://picsum.photos/seed/nkot3c/800/1200",
+          "https://picsum.photos/seed/nkot3d/800/1200",
+          "https://picsum.photos/seed/nkot3e/800/1200",
+          "https://picsum.photos/seed/nkot3f/800/1200"
         ],
-        "createdAt": "2026-06-11"
+        "createdAt": "2026-06-20"
       }
     ]
   }
