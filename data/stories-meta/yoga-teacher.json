@@ -1,0 +1,17 @@
+{
+  "slug": "yoga-teacher",
+  "url": "https://vietmanhwa.com/manhwa-18/yoga-teacher",
+  "title": "Yoga Teacher",
+  "description": "© 2026 VietManhwa. Đọc truyện Manhwa miễn phí mỗi ngày",
+  "thumbnail": "https://cdn.vinahentai.cloud/manga-posters/0d01093f-1f02-414f-9c63-e7a74cb18986-1770673260144-7c6814c5.jpg",
+  "totalChapters": 2,
+  "chapters": [
+    "chap-1-mac-%C4%91o-anh-%C4%91ong",
+    "chap-2-khong-mac-%C4%91o-anh-%C4%91ong"
+  ],
+  "chapterNums": [
+    1,
+    2
+  ],
+  "urlPattern": "chap-<num>-mac-%C<num>%<num>o-anh-%C<num>%<num>ong"
+}

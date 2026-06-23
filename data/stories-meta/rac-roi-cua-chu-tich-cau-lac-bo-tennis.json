@@ -1,0 +1,23 @@
+{
+  "slug": "rac-roi-cua-chu-tich-cau-lac-bo-tennis",
+  "url": "https://vietmanhwa.com/manhwa-18/rac-roi-cua-chu-tich-cau-lac-bo-tennis",
+  "title": "Rắc rối của chủ tịch câu lạc bộ tennis",
+  "description": "© 2026 VietManhwa. Đọc truyện Manhwa miễn phí mỗi ngày",
+  "thumbnail": "https://cdn.vinahentai.cloud/manga-posters/e9715800-662e-43a8-afe3-330b343404e9-1780559829-1780560363253-6d228922.webp",
+  "totalChapters": 5,
+  "chapters": [
+    "chap-1",
+    "chap-2",
+    "chap-3",
+    "chap-4",
+    "chap-5"
+  ],
+  "chapterNums": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "urlPattern": "chap-<num>"
+}
