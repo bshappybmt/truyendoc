@@ -1,10 +1,10 @@
 {
-  "slug": "co-nang-nong-bong-gioi-bong-a",
-  "url": "https://vietmanhwa.com/manhwa-18/co-nang-nong-bong-gioi-bong-a",
-  "title": "Cô nàng nóng bỏng giỏi bóng đá",
+  "slug": "toi-duoc-giao-nhiem-vu-dit-het-gai-chung-cu",
+  "url": "https://vietmanhwa.com/manhwa-18/toi-duoc-giao-nhiem-vu-dit-het-gai-chung-cu",
+  "title": "Tôi Được Giao Nhiệm Vụ Địt Hết Gái Chung Cư",
   "description": "© 2026 VietManhwa. Đọc truyện Manhwa miễn phí mỗi ngày",
-  "thumbnail": "https://cdn.vinahentai.cloud/test/story-images/poster-691c64360f4c125f7c35035c-w575-1770348031492-f2cd3c8d.webp",
-  "totalChapters": 47,
+  "thumbnail": "https://cdn.vietmanhwa.com/story-images/8871930839_191505828_f2e7ae042057ff0d63feb467f64de1b8-1779518122989-b0dbce21.webp",
+  "totalChapters": 41,
   "chapters": [
     "chap-1",
     "chap-2",
@@ -23,6 +23,7 @@
     "chap-15",
     "chap-16",
     "chap-17",
+    "chap-18",
     "chap-19",
     "chap-20",
     "chap-21",
@@ -45,17 +46,9 @@
     "chap-38",
     "chap-39",
     "chap-40",
-    "chap-41",
-    "chap-42",
-    "chap-43",
-    "chuong-44",
-    "chuong-45",
-    "chuong-46",
-    "chuong-47",
-    "1chuong-48"
+    "chap-41"
   ],
   "chapterNums": [
-    1,
     1,
     2,
     3,
@@ -73,7 +66,7 @@
     15,
     16,
     17,
-    17,
+    18,
     19,
     20,
     21,
@@ -96,13 +89,7 @@
     38,
     39,
     40,
-    41,
-    42,
-    43,
-    44,
-    45,
-    46,
-    47
+    41
   ],
   "urlPattern": "chap-<num>"
 }

@@ -1,0 +1,19 @@
+{
+  "slug": "co-vu-tinh-yeu",
+  "url": "https://vietmanhwa.com/manhwa-18/co-vu-tinh-yeu",
+  "title": "Cổ Vũ Tình Yêu",
+  "description": "© 2026 VietManhwa. Đọc truyện Manhwa miễn phí mỗi ngày",
+  "thumbnail": "https://cdn.vinahentai.cloud/story-images/co-vu-tinh-yeu-3-4-1781482450896-4e365314.webp",
+  "totalChapters": 3,
+  "chapters": [
+    "chap-1",
+    "chap-2",
+    "chap-3"
+  ],
+  "chapterNums": [
+    1,
+    2,
+    3
+  ],
+  "urlPattern": "chap-<num>"
+}

@@ -46,9 +46,9 @@ if (slugs.length === 0) {
         const poster = imgs.find(i => i.className?.includes('poster') || (i.alt && title && i.alt.includes(title.substring(0,10))));
         const thumbnail = poster?.src || imgs[3]?.src || '';
         
-        // Get ALL chapter links with dedup
-        const seen = new Map();
-        const chapters = [];
+        // Get ALL chapter links with dedup by chapter number
+        // When multiple paths have the same number, prefer the shorter one
+        const byNum = new Map();
         Array.from(document.querySelectorAll('a[href*="/manhwa-18/"]'))
           .forEach(a => {
             const fullHref = a.href;
@@ -57,22 +57,40 @@ if (slugs.length === 0) {
             const pathPart = slugPart.split('/')[1]?.split('?')[0] || '';
             if (!pathPart) return;
             
-            const key = pathPart;
-            if (seen.has(key)) return;
-            seen.set(key, true);
+            // Decode URL-encoded characters first, then extract last number
+            let decoded = pathPart;
+            try { decoded = decodeURIComponent(pathPart); } catch(e) {}
+            const numMatch = decoded.match(/(\d+)/g);
+            const chapterNum = numMatch ? parseInt(numMatch[numMatch.length - 1]) : 0;
             
-            const numMatch = pathPart.match(/(\d+)/);
-            const num = numMatch ? parseInt(numMatch[1]) : 0;
-            
-            chapters.push({
-              path: pathPart,
-              num: num,
-              text: a.innerText.trim().substring(0, 100)
-            });
+            // Prefer shorter path (less likely an alternate format like `1chapter-N` vs `chapter-N`)
+            if (!byNum.has(chapterNum) || pathPart.length < byNum.get(chapterNum).path.length) {
+              byNum.set(chapterNum, { path: pathPart, num: chapterNum });
+            }
           });
         
-        // Sort by number
-        chapters.sort((a, b) => a.num - b.num);
+        // Convert to sorted array
+        const chapters = Array.from(byNum.values())
+          .sort((a, b) => a.num - b.num)
+          .map(c => c.path);
+        
+        // Filter out outliers: paths with numbers > 3x the median chapter number
+        // These are usually links to related stories in the sidebar, not actual chapters
+        if (chapters.length > 5) {
+          const nums = chapters.map(p => {
+            let d = p; try { d = decodeURIComponent(p); } catch(e) {}
+            const n = (d.match(/(\d+)/g) || ['0']).slice(-1)[0];
+            return parseInt(n);
+          });
+          nums.sort((a,b) => a-b);
+          const median = nums[Math.floor(nums.length / 2)];
+          const threshold = Math.max(median * 3, 200); // at least 3x median, min 200
+          const filtered = chapters.filter((p, i) => nums[i] <= threshold);
+          if (filtered.length !== chapters.length) {
+            console.log(`  Filtered out ${chapters.length - filtered.length} outlier chapters`);
+          }
+          return { title, description, thumbnail, chapters: filtered, totalChapters: filtered.length };
+        }
         
         return { title, description, thumbnail, chapters, totalChapters: chapters.length };
       }, slug);
@@ -80,7 +98,7 @@ if (slugs.length === 0) {
       console.log(`Title: ${info.title}`);
       console.log(`Chapters: ${info.totalChapters}`);
       console.log(`Thumbnail: ${info.thumbnail}`);
-      console.log(`Sample paths: ${info.chapters.slice(0, 3).map(c => c.path).join(', ')}`);
+      console.log(`Sample paths: ${info.chapters.slice(0, 3).join(', ')}`);
       
       // Save metadata
       const meta = {
@@ -89,10 +107,9 @@ if (slugs.length === 0) {
         description: info.description,
         thumbnail: info.thumbnail,
         totalChapters: info.totalChapters,
-        chapters: info.chapters.map(c => c.path),
-        chapterNums: info.chapters.map(c => c.num),
+        chapters: info.chapters,
         urlPattern: info.chapters.length > 0 ? 
-          info.chapters[0].path.replace(/\d+/g, '<num>') : 'unknown'
+          info.chapters[0].replace(/\d+/g, '<num>') : 'unknown'
       };
       
       fs.writeFileSync(`data/stories-meta/${slug}.json`, JSON.stringify(meta, null, 2));

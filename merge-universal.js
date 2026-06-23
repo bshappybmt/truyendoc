@@ -23,24 +23,19 @@ if (existingIdx >= 0) {
   console.log(`Story "${slug}" already exists! Updating chapters...`);
 }
 
-// Build chapters array from scraped data
-const chapters = scraped.map(ch => {
-  // Extract chapter number from path
-  const match = ch.chapter.match(/(\d+)/);
-  const num = match ? parseInt(match[1]) : 0;
-  
+// Build chapters array from scraped data (in page order)
+// Use sequential index-based numbering for clean, reliable chapter IDs
+const chapters = scraped.map((ch, i) => {
+  const idx = i + 1;
   return {
-    id: `chapter-${num}`,
-    number: num,
-    title: `Chapter ${num}`,
-    slug: `${num}`,
+    id: `chapter-${idx}`,
+    number: idx,
+    title: `Chapter ${idx}`,
+    slug: `${idx}`,
     pages: ch.images,
     createdAt: new Date().toISOString().split('T')[0]
   };
 });
-
-// Sort by number
-chapters.sort((a, b) => a.number - b.number);
 
 // Story object
 const story = {

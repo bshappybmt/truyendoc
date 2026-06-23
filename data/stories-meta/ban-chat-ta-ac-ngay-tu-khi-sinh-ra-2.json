@@ -1,0 +1,23 @@
+{
+  "slug": "ban-chat-ta-ac-ngay-tu-khi-sinh-ra-2",
+  "url": "https://vietmanhwa.com/manhwa-18/ban-chat-ta-ac-ngay-tu-khi-sinh-ra-2",
+  "title": "Ác Tính Bẩm Sinh",
+  "description": "© 2026 VietManhwa. Đọc truyện Manhwa miễn phí mỗi ngày",
+  "thumbnail": "https://cdn.vietmanhwa.com/story-images/download-1778865291919-157411cf.jpg",
+  "totalChapters": 5,
+  "chapters": [
+    "chap-1",
+    "chap-2",
+    "chap-3",
+    "chap-4",
+    "chap-5"
+  ],
+  "chapterNums": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "urlPattern": "chap-<num>"
+}

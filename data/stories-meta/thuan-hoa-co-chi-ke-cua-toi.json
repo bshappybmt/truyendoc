@@ -1,0 +1,23 @@
+{
+  "slug": "thuan-hoa-co-chi-ke-cua-toi",
+  "url": "https://vietmanhwa.com/manhwa-18/thuan-hoa-co-chi-ke-cua-toi",
+  "title": "Thuần Hóa Cô Chị Kế Của Tôi",
+  "description": "© 2026 VietManhwa. Đọc truyện Manhwa miễn phí mỗi ngày",
+  "thumbnail": "https://cdn.vinahentai.cloud/story-images/download-1778068445623-09a5b0d4.webp",
+  "totalChapters": 5,
+  "chapters": [
+    "chap-1",
+    "iloveimg-compressed-5",
+    "han-seng-v11",
+    "chap-21",
+    "chap-22"
+  ],
+  "chapterNums": [
+    1,
+    5,
+    11,
+    21,
+    22
+  ],
+  "urlPattern": "chap-<num>"
+}

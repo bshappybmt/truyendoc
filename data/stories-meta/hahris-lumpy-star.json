@@ -1,0 +1,23 @@
+{
+  "slug": "hahris-lumpy-star",
+  "url": "https://vietmanhwa.com/manhwa-18/hahris-lumpy-star",
+  "title": "Hahri's Lumpy Star",
+  "description": "© 2026 VietManhwa. Đọc truyện Manhwa miễn phí mỗi ngày",
+  "thumbnail": "https://cdn.vietmanhwa.com/story-images/6518ebcfbd9f1hahris-lumpy-background-1781899034181-fbd1d58a.webp",
+  "totalChapters": 5,
+  "chapters": [
+    "chap-1",
+    "chap-2",
+    "chap-3",
+    "chap-4",
+    "chap-5"
+  ],
+  "chapterNums": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "urlPattern": "chap-<num>"
+}

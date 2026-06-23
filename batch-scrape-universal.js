@@ -110,15 +110,31 @@ const results = [];
   
   await browser.close();
   
-  // Final save
+  // Merge with existing scraped data (don't overwrite previous batches)
   const finalPath = `data/stories-meta/${slug}-scraped.json`;
-  fs.writeFileSync(finalPath, JSON.stringify(results, null, 2));
-  console.log(`\n=== Saved ${results.length} chapters to ${finalPath} ===`);
+  let allResults = [];
+  if (fs.existsSync(finalPath)) {
+    const existing = JSON.parse(fs.readFileSync(finalPath, 'utf-8'));
+    // Keep existing chapters NOT in the current batch range
+    const currentPaths = new Set(results.map(r => r.chapter));
+    const kept = existing.filter(r => !currentPaths.has(r.chapter));
+    allResults = [...kept, ...results];
+    // Restore original order from metadata
+    const orderMap = {};
+    chapters.forEach((p, i) => { orderMap[p] = i; });
+    allResults.sort((a, b) => (orderMap[a.chapter] || 9999) - (orderMap[b.chapter] || 9999));
+    console.log(`Merged: ${kept.length} existing + ${results.length} new = ${allResults.length} total`);
+  } else {
+    allResults = results;
+  }
+  
+  fs.writeFileSync(finalPath, JSON.stringify(allResults, null, 2));
+  console.log(`Saved ${allResults.length} chapters to ${finalPath}`);
   
   // Summary
   let totalImgs = 0;
   let failed = 0;
-  results.forEach(r => {
+  allResults.forEach(r => {
     totalImgs += r.images.length;
     if (r.images.length === 0) failed++;
   });
